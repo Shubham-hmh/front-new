@@ -16,7 +16,7 @@ const UserData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('/api/data');
+        const response = await axios.get('https://task-back-9pps.onrender.com/api/data');
         setUserData(response.data);
       } catch (error) {
         setError('Error fetching data');
